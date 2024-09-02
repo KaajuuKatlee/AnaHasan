@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(9bcb08051203058770d6c139055423f158040065_s2_n3_y2.jpg);
+    background-size: cover;
+}
+#genres {
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: Bangers;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlists</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <select name="genres" id="genres" onchange="la()">
+        <option value="">Choose Your Mood</option>
+        <option value="https://open.spotify.com/playlist/2DJzxeK2QY15jpcT3SNTAd?si=570b59506063437b">Hip-Hop</option>
+        <option value="https://open.spotify.com/playlist/3zD4kgy0S9sPB0OZlkrIzs?si=909cfee621584ccd">Indie</option>
+        <option value="https://open.spotify.com/playlist/7s2mzdPnJLA2mF9F60R0KB?si=905ef8760ecd4874">DHH (Desi Hip-Hop)</option>
+        <option value="https://open.spotify.com/playlist/10Ha7vk0U0RGstUDfQPh1a?si=bb0be13c840a4875">Pakistani</option>
+        <option value="https://open.spotify.com/playlist/52AM4SIAnYO93VmMujlYEX?si=96da861cdcec4942">The "Main Character" Genre</option>
+        <option value="https://open.spotify.com/playlist/1EyzLPAbJv11EPhxmTUuji?si=cfef8e5a67914b41">Old School</option>
+        <option value="https://open.spotify.com/playlist/4yRx24mvrtmZcBvYxoWbd2?si=b33e43d23b56426a">To Cry Over</option>
+        <option value="https://open.spotify.com/playlist/5FluPjCZnjBYe5JIuchlKC?si=4fad273d0f9541f9">Cure To Your Anxiety</option>
+        <option value="https://open.spotify.com/playlist/2edkyWTSalIxMzrR1DsBM9?si=8592ddb68c4845ed">Punjabi</option>
+        <option value="https://open.spotify.com/playlist/4he6azw2uLtJrWTonJoAju?si=ec536e4eb0ef4ec5">When You Need A Tight Hug</option>
+
+        </select>
+        <script>
+            var select = document.querySelector('select');
+            select.addEventListener('change', function() {
+            var url = this.value;
+            window.open(url, '_blank');
+        });
+        </script>
+
+</body>
+</html>
